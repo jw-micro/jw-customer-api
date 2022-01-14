@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package customer;
+option go_package = "github.com/cargod-bj/b2c-customer-api/customer";
+
+service Customer {
+  rpc GetList(CustListParams) returns (CustDto) {}
+}
+
+message CustListParams{
+  uint64 id = 1;
+}
+
+message CustDto{
+  uint64 id = 1;
+  string name=2;
+}
