@@ -4,7 +4,7 @@ package customer;
 option go_package = "github.com/cargod-bj/b2c-customer-api/customer";
 
 service Customer {
-  rpc GetList(CustListParams) returns (CustDto);
+  rpc GetList(CustListParams) returns (CustDto){}
 }
 
 message CustListParams{
